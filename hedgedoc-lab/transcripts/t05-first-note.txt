@@ -1,0 +1,35 @@
+== 1. home page ==
+GET / -> HTTP 200, 15918 bytes
+<title>HedgeDoc - Ideas grow better together</title>
+
+== 2. /status endpoint ==
+{"onlineNotes":0,"onlineUsers":0,"distinctOnlineUsers":0,"notesCount":0,"registeredUsers":0,"onlineRegisteredUsers":0,"distinctOnlineRegisteredUsers":0,"isConnectionBusy":false,"connectionSocketQueueLength":0,"isDisconnectBusy":false,"disconnectSocketQueueLength":0}
+== 3. create a note: POST /new with the fixture as body ==
+HTTP/1.1 302 Found
+Location: http://localhost:18081/rCdrQ52PSp-kpL6CvJ6pEw
+== 4. GET /rCdrQ52PSp-kpL6CvJ6pEw/info (JSON metadata) ==
+{
+    "title": "Saturday Workshop Notes",
+    "description": "# Saturday Workshop Notes  A pad anyone at the table can write on at the same time.  ## Shopping lis",
+    "viewcount": 0,
+    "createtime": "2026-11-01T03:25:36.857Z",
+    "updatetime": null
+}
+
+== 5. GET /rCdrQ52PSp-kpL6CvJ6pEw/download (the note as Markdown) ==
+# Saturday Workshop Notes
+
+A pad anyone at the table can write on at the same time.
+
+## Shopping list for next week
+
+- Sandpaper, two grits
+- Wood glue
+- A box of assorted screws
+
+## The one rule
+
+Write the decision down **while it is being made**,
+not from memory afterwards.
+== 6. GET /rCdrQ52PSp-kpL6CvJ6pEw/revision (revision list) ==
+{"revision":[{"time":1793503536937,"length":277}]}

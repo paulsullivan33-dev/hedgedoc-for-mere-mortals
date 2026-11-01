@@ -1,0 +1,15 @@
+== sqlite: the Notes table ==
+tables: ['Authors', 'Notes', 'Revisions', 'SequelizeMeta', 'Sessions', 'Users', 'sqlite_sequence']
+note row: ('ac276b43-9d8f-4a9f-a4a4-be82bc9ea913', 'LFLUzUABt4', 'Saturday Workshop Notes', 277)
+revision row: ('ac276b43-9d8f-4a9f-a4a4-be82bc9ea913', None, None)
+== editor page ==
+GET /rCdrQ52PSp-kpL6CvJ6pEw -> HTTP 200, 42106 bytes
+<title>Saturday Workshop Notes - HedgeDoc</title>
+== published view /s/LFLUzUABt4 ==
+HTTP 200, 5226 bytes
+4
+<title>Saturday Workshop Notes - HedgeDoc</title>
+== slide view /p/LFLUzUABt4 ==
+HTTP 200, 5342 bytes
+== one revision fetched whole ==
+{"content":"# Saturday Workshop Notes\n\nA pad anyone at the table can write on at the same time.\n\n## Shopping list for next week\n\n- Sandpaper, two grits\n- Wood glue\n- A box of assorted screws\n\n## The one rule\n\nWrite the decision down **while it is being made**,\nnot from memory afterwards.\n","patch":[],"authorship":[]}

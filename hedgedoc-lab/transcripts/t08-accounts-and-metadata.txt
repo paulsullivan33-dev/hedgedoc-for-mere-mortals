@@ -1,0 +1,16 @@
+== register a local account (form POST) ==
+POST /register -> HTTP 302
+== log in ==
+POST /login -> HTTP 302
+== who am I: /me ==
+{"status":"ok","id":"fcccdc57-5f95-435e-9353-24a580f83d86","name":"padkeeper","photo":"https://cdn.libravatar.org/avatar/79e7fa5b42745e44bcfd8360a610b333?default=identicon&s=96"}
+== a note with YAML front matter, created while signed in ==
+Location: http://localhost:18081/6tNWP3ICS8mlnXxYi3Omsg
+== my history (signed-in notes list) ==
+{"history":[]}
+== signed-in note's /info: front matter wins ==
+{"title":"The Labelled Note","description":"Front matter sets the title","viewcount":0,"createtime":"2026-11-01T03:26:24.504Z","updatetime":null}
+== open the note in the editor, then look at history again ==
+GET /6tNWP3ICS8mlnXxYi3Omsg -> HTTP 200
+{"history":[]}
+== tags from the note page data ==

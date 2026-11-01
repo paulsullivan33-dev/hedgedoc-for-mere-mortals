@@ -1,0 +1,27 @@
+site_name: HedgeDoc for Mere Mortals
+site_description: A shared writing pad you host yourself. Many people typing in one Markdown document at the same time, watching each other's words land, with accounts, permissions, published and slide views, kept history, and the privacy line stated plainly.
+site_url: https://paulsullivan33-dev.github.io/hedgedoc-for-mere-mortals/
+copyright: 'Part of <a href="https://paulsullivan33-dev.github.io/mere-mortals/">For Mere Mortals</a> · Text <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, code MIT'
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - What HedgeDoc Is: what-hedgedoc-is.md
+  - The Moving Parts: the-moving-parts.md
+  - Installing HedgeDoc: installing-hedgedoc.md
+  - Your First Pad: your-first-pad.md
+  - Writing in Markdown: writing-in-markdown.md
+  - Many Hands — Editing Together: many-hands.md
+  - Sharing and Permissions: sharing-and-permissions.md
+  - Pictures in Pads: pictures-in-pads.md
+  - Finding and Keeping Notes: finding-and-keeping-notes.md
+  - Recipes: recipes.md
+  - The Neighbours: the-neighbours.md
+  - Limits: limits.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md

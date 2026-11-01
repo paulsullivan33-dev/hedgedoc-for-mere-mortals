@@ -1,0 +1,18 @@
+== the realtime channel answers (socket.io polling handshake) ==
+0{"sid":"0YnG6eYxExWb1c84AAAA","upgrades":["websocket"],"pingInterval":5000,"pingTimeout":10000,"maxPayload":1000000}
+
+== admin scripts the release ships ==
+cleanup
+heroku
+manage_users
+migrate_from_fs_to_minio
+setup
+
+== final counts, then shutdown ==
+{"onlineNotes":0,"onlineUsers":0,"distinctOnlineUsers":0,"notesCount":3,"registeredUsers":1,"onlineRegisteredUsers":0,"distinctOnlineRegisteredUsers":0,"isConnectionBusy":false,"connectionSocketQueueLength":0,"isDisconnectBusy":false,"disconnectSocketQueueLength":0}
+killing server pid 87943
+server stopped; port 18081 is quiet
+total 76
+drwxrwx--- 1 root root    30 Nov  1 03:26 .
+drwxrwx--- 1 root root   442 Nov  1 03:26 ..
+-rw-r----- 1 root root 73728 Nov  1 03:26 hedgedoc.sqlite

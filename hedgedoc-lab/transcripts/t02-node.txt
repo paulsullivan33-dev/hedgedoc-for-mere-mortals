@@ -1,0 +1,6 @@
+system node v24.22.1 has no corepack bundled; project docs ask for Node 20+ LTS
+downloading official Node v26.13.0 tarball from nodejs.org
+-rw-rw---- 1 root root 34083252 Nov  1 03:09 node.tar.xz
+Node 26 is the newest LTS line, but HedgeDoc 1.12's dependency set (sqlite3 5.1.7) predates it; pinning the newest Node 22 LTS instead, still inside the documented 'Node 20 or later' range
+v22.23.4
+0.36.0

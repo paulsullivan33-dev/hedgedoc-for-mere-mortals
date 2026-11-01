@@ -1,0 +1,9 @@
+---
+title: The Labelled Note
+description: Front matter sets the title
+tags: workshop, decisions
+---
+
+# Body heading
+
+The front matter above names this note.

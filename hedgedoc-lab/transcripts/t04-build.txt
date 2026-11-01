@@ -1,0 +1,27 @@
+== yarn build (webpack production) ==
+Sun Nov  1 03:23:24 UTC 2026
+        Entrypoint mini-css-extract-plugin = *
+        [0] ./node_modules/css-loader/dist/runtime/api.js 1.57 KiB {0} [built]
+        [1] ./node_modules/css-loader/dist/cjs.js!./public/css/highlightjs.css 336 bytes {0} [built]
+    Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!public/css/markdown.css:
+        Entrypoint mini-css-extract-plugin = *
+        [0] ./node_modules/css-loader/dist/runtime/api.js 1.57 KiB {0} [built]
+        [1] ./node_modules/css-loader/dist/cjs.js!./public/css/markdown.css 4.66 KiB {0} [built]
+    Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!public/css/site.css:
+        Entrypoint mini-css-extract-plugin = *
+        [0] ./node_modules/css-loader/dist/runtime/api.js 1.57 KiB {0} [built]
+        [1] ./node_modules/css-loader/dist/cjs.js!./public/css/site.css 1.03 KiB {0} [built]
+    Child mini-css-extract-plugin node_modules/css-loader/dist/cjs.js!public/css/slide-preview.css:
+        Entrypoint mini-css-extract-plugin = *
+        [0] ./node_modules/css-loader/dist/runtime/api.js 1.57 KiB {0} [built]
+        [1] ./node_modules/css-loader/dist/cjs.js!./public/css/slide-preview.css 2.72 KiB {0} [built]
+build exit: 0
+Sun Nov  1 03:24:59 UTC 2026
+total 60248
+drwxrwxr-x 1 1000 1000   11598 Nov  1 03:24 .
+drwxrwxr-x 1 1000 1000     168 Aug 21 21:42 ..
+-rw-rw---- 1 root root  136120 Nov  1 03:24 006708d6691753cfc46eec2dae88fbdafa22823a89194149d9f223050dc78998.woff
+-rw-rw---- 1 root root    2390 Nov  1 03:24 1.1666d9d869a0532d9bce.css
+-rw-rw---- 1 root root    3537 Nov  1 03:24 1.1666d9d869a0532d9bce.css.map
+-rw-rw---- 1 root root   56524 Nov  1 03:24 124ad92df245047247cc4e6e028f968b2c93bfe10eaa0b526c1acc91fb4d1fe6.woff
+-rw-rw---- 1 root root   20127 Nov  1 03:24 13634da87d9e23f8c3ed9108ce1724d183a39ad072e73e1b3d8cbf646d2d0407.eot

@@ -1,0 +1,11 @@
+== a note ID that does not exist (freeURL creation is OFF by default) ==
+GET /never-created-note -> HTTP 404
+== GET /new, the browser way in: a fresh empty note ==
+HTTP/1.1 302 Found
+Location: http://localhost:18081/q5eTqsQAQQKofvtTOqtLHg
+== the anonymous note's default permission, from the editor page ==
+== stopping the server ==
+== restarted; the note must still be there (it lives in SQLite) ==
+2026-11-01T03:26:06.666Z info: 	HTTP Server listening at 127.0.0.1:18081
+download after restart: IDENTICAL to the fixture that was posted
+{"onlineNotes":0,"onlineUsers":0,"distinctOnlineUsers":0,"notesCount":2,"registeredUsers":0,"onlineRegisteredUsers":0,"distinctOnlineRegisteredUsers":0,"isConnectionBusy":false,"connectionSocketQueueLength":0,"isDisconnectBusy":false,"disconnectSocketQueueLength":0}

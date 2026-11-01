@@ -1,0 +1,39 @@
+== package.json engines and scripts ==
+version: 1.12.0
+engines: {'node': '>=18'}
+ script test => npm run-script eslint && npm run-script jsonlint && npm run-script mocha-suite
+ script eslint => node_modules/.bin/eslint --max-warnings 0 lib public test app.js
+ script jsonlint => find . \( -not -path './node_modules/*' -type f -name '*.json' -o -type f -name '*.json.example' \) -print0 | xargs -0 -I 'file' jq . file
+ script markdownlint => remark .
+ script mocha-suite => NODE_ENV=test CMD_DB_URL="sqlite::memory:" mocha --exit
+ script standard => echo 'standard is no longer being used, use `npm run eslint` instead!' && exit 1
+ script dev => webpack --config webpack.dev.js --progress --watch
+ script heroku-prebuild => bin/heroku
+ script build => webpack --config webpack.prod.js --progress
+ script build:ot => bash -c "cd public/vendor/ot && ./compress.sh"
+ script start => node app.js
+
+== node version files ==
+
+== docs setup requirements ==
+community.md
+docker.md
+getting-started.md
+manual-setup.md
+    - Node.js 20 or later
+      We recommend to run HedgeDoc with the latest LTS release of Node.js.
+    - NPM (and its dependencies, [node-gyp](https://github.com/nodejs/node-gyp#installation))
+    - [Yarn 4](https://yarnpkg.com/): Running `corepack enable` once should be sufficient, Node.js will then
+   NODE_ENV=production yarn start
+   <small>You can leave out `NODE_ENV=production` for development.</small>  
+8. Run the server as you like (node, forever, pm2, systemd, Init-Scripts).  
+   NODE_ENV=production yarn start
+packageManager: yarn@4.13.0
+sqlite3 dep: 5.1.7
+src/.yarnrc.yml
+src/yarn.lock
+/usr/bin/make
+/usr/bin/g++
+/usr/bin/gcc
+/usr/bin/python3
+v24.22.1

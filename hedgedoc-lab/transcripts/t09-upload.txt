@@ -1,0 +1,13 @@
+wrote a 1x1 PNG, 70 bytes
+== upload it the way the editor's Insert Image button does ==
+{"link":"http://localhost:18081/uploads/7b14be4f-9a7e-46be-9b30-0c65c6b571a3.png"}
+== fetch the uploaded image back ==
+GET /uploads/7b14be4f-9a7e-46be-9b30-0c65c6b571a3.png -> HTTP 200, 70 bytes, type image/png
+uploaded and downloaded bytes are identical
+== where it lives on disk ==
+-rw-rw-r-- 1 1000 1000   0 Aug 21 21:41 .gitkeep
+-rw-rw---- 1 root root  70 Nov  1 03:26 7b14be4f-9a7e-46be-9b30-0c65c6b571a3.png
+== version facts for the guide ==
+/bin/bash: line 1: ../node/bin/node: No such file or directory
+  "version": "1.12.0",
+2026-11-01T03:25:16.259Z info: 	HTTP Server listening at 127.0.0.1:18081
